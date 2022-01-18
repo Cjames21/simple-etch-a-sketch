@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Simple Etch-a-Sketch</title>
+</head>
+<body>  
+    <div class="flex-container">
+        <h1 class="flex-header">Etch-a-Sketch</h1>
+    </div>
+
+    <div class="flex-container content">        
+        <div class="flex-item--game" id="gameArea">
+            <!-- flex-item--game is where the grid will be built -->
+        </div>
+        <div class="flex-item--control-panel">
+            <div class="flex-item--control-item">
+                <button id="enableGame">Start</button>
+                <button id="disableGame">Reset</button>
+            </div>
+            <div class="flex-item--user-input">
+                <label for="user-input">Enter grid size</label>
+                <input type="number" name="user-input">
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
