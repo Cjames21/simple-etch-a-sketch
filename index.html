@@ -9,7 +9,7 @@
     <title>Simple Etch-a-Sketch</title>
 </head>
 <body>  
-    <div class="flex-container">
+    <div class="flex-container nav-bar">
         <h1 class="flex-header">Etch-a-Sketch</h1>
     </div>
 
@@ -19,16 +19,26 @@
         </div>
         <div class="flex-item--control-panel">
             <div class="flex-item--control-item">
-                <button id="enableGame">Start</button>
-                <button id="disableGame">Reset</button>
+                <!-- <button id="enableGame">Start</button> -->
+                <button class="btn-disable-game" id="disableGame">Reset</button>
             </div>
-            <div class="flex-item--user-input">
+            <div class="flex-item--control-item">
+                <h2 id="sizeView">Grid Size: 40</h2>
+            </div>
+            <div class="flex-item--control-item">
                 <label for="user-input">Enter grid size</label>
                 <input type="number" name="user-input" id="uInput" />
                 <button type="button" id="changeSize">Submit</button>
             </div>
-            <div>
-                <h2 id="sizeView">Grid Size: </h2>
+
+            <div class="flex-item--control-item rainbow-mode">
+                <button class="btn-rainbow" id="black-pen">Black Pen</button>
+                <button class="btn-rainbow" id="rainbow-pen">Rainbow Pen</button>
+                <button class="btn-rainbow" id="eraser">Eraser</button>
+            </div>
+
+            <div class="flex-item--control-item colors" id="colorsCont">
+                
             </div>
         </div>
     </div>
